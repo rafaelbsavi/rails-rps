@@ -49,7 +49,7 @@ class RpsController < ApplicationController
     elsif they_result == "paper"
       @final_result = "We won!"
     elsif they_result == "scissors"
-      @final_result = "We tie!"
+      @final_result = "We tied!"
     end
     render({:template => "game_templates/play_scissors"})
   end
